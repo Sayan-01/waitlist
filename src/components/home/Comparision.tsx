@@ -13,10 +13,10 @@ const rows = [
   { workflow: "Deliverables", old: "Shared folders with no context", milestack: "Structured delivery flow" },
 ];
 
-const HowItWorks = () => (
+const Comparision = () => (
   <section
-    id="how-it-works"
-    className="py-24 md:py-32 relative overflow-hidden"
+    id="comparison"
+    className="py-24 md:py-36 relative overflow-hidden"
   >
     <div className="absolute inset-0 rotate-180  flex justify-center gap-2 opacity-10 pointer-events-none w-full left-0 right-0 z-100">
       {[...Array(30)].map((_, i) => (
@@ -139,4 +139,4 @@ const HowItWorks = () => (
   </section>
 );
 
-export default HowItWorks;
+export default Comparision;

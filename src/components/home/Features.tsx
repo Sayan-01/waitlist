@@ -14,7 +14,10 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-28 bg-black">
+    <section
+      id="features"
+      className="pt-24 md:pt-36 pb-4"
+    >
       <Wrapper className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium mb-6 shadow-[0_0_15px_rgba(99,102,241,0.1)]">

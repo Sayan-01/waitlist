@@ -45,7 +45,7 @@ export default function WaitlistForm({ variant = "default" }: { variant?: "defau
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="flex items-center gap-2 text-emerald-400 font-medium py-2 px-4 rounded-full bg-emerald-400/10 border border-emerald-400/20"
+        className="flex items-center gap-2 text-emerald-400 font-medium py-2 px-4 h-12 rounded-full bg-emerald-400/10 border border-emerald-400/20"
       >
         <CheckCircle2 className="w-5 h-5 shrink-0" />
         <span>You're on the list! We'll be in touch soon.</span>

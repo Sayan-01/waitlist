@@ -38,8 +38,8 @@ export default function Hero() {
           <div className="flex flex-col items-center gap-6">
             <WaitlistForm variant="hero" />
 
-            <button className="flex items-center gap-2 text-zinc-500 hover:text-white transition-colors text-sm font-medium group">
-              See how it works
+            <button className="flex items-center gap-2 text-zinc-500 hover:text-white/50 transition-colors text-sm font-medium group">
+              No spam. Early access only.
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>

@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://x.com/sayandas_dev"
               className="text-zinc-500 hover:text-white transition-colors"
             >
               <Twitter className="w-5 h-5" />
