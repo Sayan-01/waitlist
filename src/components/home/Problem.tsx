@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { MessageSquareOff, FolderSearch, Clock, AlertCircle } from "lucide-react";
-import { Card, CardContent } from "./ui/Card";
+import { Card, CardContent } from "../ui/card";
 
 const problems = [
   {

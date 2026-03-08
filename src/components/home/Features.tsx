@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Layout, Milestone, CheckSquare, MessageSquare } from "lucide-react";
-import { Card, CardContent } from "./ui/Card";
+import { Card} from "../ui/card";
 
 const features = [
   {
