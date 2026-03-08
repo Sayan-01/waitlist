@@ -6,7 +6,7 @@ import Wrapper from "../layout/Wrapper";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 overflow-hidden text-center h-screen w-full">
+    <section className="relativ overflow-hidden text-center h-screen w-full flex items-center flex-col justify-center">
       <img
         src="/hero.svg"
         alt="Hero"
@@ -15,7 +15,7 @@ export default function Hero() {
         className="w-full  absolute -bottom-5 left-0 right-0 z-0"
       />
 
-      <Wrapper className="flex flex-col items-center relative z-10 pt-10">
+      <Wrapper className="flex flex-col items-center relative z-10 -mt-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function Hero() {
             Stop Managing Client Feedback in <span className="text-zinc-500 italic">Endless Email Threads</span>
           </h1>
           <p className="text-md md:text-lg text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Milestack helps web design agencies manage <br/> approvals, feedback, and project milestones in one place.
+            Milestack helps web design agencies manage client <br /> feedback, approvals, and project milestones in one workspace.
           </p>
 
           <div className="flex flex-col items-center gap-6">

@@ -1,9 +1,10 @@
 import { Twitter, Github, Linkedin, Instagram } from "lucide-react";
+import Wrapper from "./Wrapper";
 
 export default function Footer() {
   return (
-    <footer className="py-12 bg-black border-t border-zinc-900">
-      <div className="container mx-auto px-6">
+    <footer className="py-6 border-t border-white/5">
+      <Wrapper className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <div className="text-2xl font-bold text-white mb-2">Milestack</div>
@@ -37,7 +38,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </Wrapper>
     </footer>
   );
 }

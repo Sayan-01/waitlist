@@ -1,24 +1,25 @@
 import { motion } from "motion/react";
 import WaitlistForm from "./WaitlistForm";
+import Footer from "./Footer";
 
 export default function WaitlistSection() {
   return (
-    <section className="py-24 bg-zinc-950 relative overflow-hidden">
+    <section className="pt-28 bg-gradient-to-br from-emerald-500/20 to-transparent relative overflow-hidden flex flex-col gap-28">
       {/* Background Vertical Bars Gradient - Inspired by the reference image */}
-      <div className="absolute inset-0 -z-10 flex justify-center gap-4 opacity-10 pointer-events-none">
-        {[...Array(12)].map((_, i) => (
+      <div className="absolute inset-0 flex justify-center gap-2 opacity-10 pointer-events-none w-full left-0 right-0 z-100">
+        {[...Array(30)].map((_, i) => (
           <div
             key={i}
-            className="w-12 h-full bg-gradient-to-b from-emerald-500/40 to-transparent"
+            className="w-16 h-full bg-gradient-to-b from-emerald-500/60 to-transparent"
             style={{
-              opacity: 1 - i * 0.05,
+              opacity: 0.6,
               transform: `translateY(${i % 2 === 0 ? "-20%" : "-40%"})`,
             }}
           />
         ))}
       </div>
 
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-6 text-center ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,6 +36,7 @@ export default function WaitlistSection() {
           <p className="mt-6 text-zinc-500 text-sm">Be the first to try Milestack. No spam, ever.</p>
         </motion.div>
       </div>
+      <Footer/>
     </section>
   );
 }

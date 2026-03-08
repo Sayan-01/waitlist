@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { MessageSquareOff, FolderSearch, Clock, AlertCircle } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
+import Wrapper from "../layout/Wrapper";
 
 const problems = [
   {
@@ -35,10 +36,17 @@ const problems = [
 
 export default function Problem() {
   return (
-    <section className="py-24 bg-zinc-950">
-      <div className="container mx-auto px-6">
+    <section className="py-28 bg-zinc-950">
+      <Wrapper className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Client Collaboration is Broken</h2>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium mb-6 shadow-[0_0_15px_rgba(99,102,241,0.1)]">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            The Problem
+          </div>
+          <h2 className="text-3xl md:text-5xl text-white mb-4 font-serif italic">Client Collaboration is Broken</h2>
           <p className="text-zinc-400 max-w-xl mx-auto">Agencies spend 40% of their time just managing communication. We're fixing that.</p>
         </div>
 
@@ -52,7 +60,7 @@ export default function Problem() {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors h-full">
-                <CardContent className="pt-6">
+                <CardContent>
                   <div className={`w-12 h-12 rounded-lg ${problem.bg} flex items-center justify-center mb-4`}>
                     <problem.icon className={`w-6 h-6 ${problem.color}`} />
                   </div>
@@ -63,7 +71,7 @@ export default function Problem() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Wrapper>
     </section>
   );
 }

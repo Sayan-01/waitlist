@@ -1,11 +1,9 @@
-
 import './App.css'
-import FeaturePreview from './components/home/FeaturePreview';
 import Features from './components/home/Features';
 import Hero from './components/home/Hero';
+import HowItWorks from './components/home/HowItWorks';
 import Marquee from './components/home/Marquee';
 import Problem from './components/home/Problem';
-import Footer from './components/layout/Footer';
 import Navbar from './components/layout/Navbar';
 import WaitlistSection from './components/layout/WaitlistSection';
 
@@ -19,10 +17,9 @@ function App() {
         <Marquee />
         <Problem />
         <Features />
-        <FeaturePreview />
+        <HowItWorks/>
         <WaitlistSection />
       </main>
-      <Footer />
     </div>
   );
 }
