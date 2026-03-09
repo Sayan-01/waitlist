@@ -38,7 +38,7 @@ export default function Problem() {
   return (
     <section
       id="problem"
-      className="pt-24 md:pt-36 pb-4"
+      className="pt-24 md:pt-36 pb-5"
     >
       <Wrapper className="container mx-auto px-6">
         <div className="text-center mb-16">

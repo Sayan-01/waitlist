@@ -56,7 +56,7 @@ export default function WaitlistForm({ variant = "default" }: { variant?: "defau
   return (
     <form
       onSubmit={onSubmit}
-      className={`flex flex-col sm:flex-row gap-3 w-full max-w-md ${variant === "hero" ? "mx-auto" : ""}`}
+      className={`flex flex-row gap-3 w-full max-w-md ${variant === "hero" ? "mx-auto" : ""}`}
     >
       <div className="flex-1">
         <Input
@@ -76,7 +76,10 @@ export default function WaitlistForm({ variant = "default" }: { variant?: "defau
         {isSubmitting ? (
           <Loader2 className="w-5 h-5 animate-spin" />
         ) : (
-          "Join the Waitlist"
+          <>
+          <span className="hidden md:block">Join the Waitlist</span>
+          <span className="block md:hidden">Join</span>
+          </>
         )}
       </Button>
     </form>

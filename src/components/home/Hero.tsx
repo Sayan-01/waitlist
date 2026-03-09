@@ -3,19 +3,18 @@ import { ChevronRight } from "lucide-react";
 import WaitlistForm from "../layout/WaitlistForm";
 import Wrapper from "../layout/Wrapper";
 
-
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden text-center h-screen w-full flex items-center flex-col justify-center">
+    <section className="relative overflow-hidden text-center h-dvh w-full flex items-center flex-col justify-center">
       <img
         src="/hero.svg"
         alt="Hero"
         width={1920}
         height={1080}
-        className="w-full  absolute -bottom-5 left-0 right-0 z-0"
+        className="w-full sm:scale-100 scale-[280%]  absolute sm:-bottom-5 bottom-36 sm:left-0 -left-[140px] sm:right-0 z-0"
       />
 
-      <Wrapper className="flex flex-col items-center relative z-10 -mt-5">
+      <Wrapper className="flex flex-col items-center relative z-10 sm:-mt-5 mt-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,11 +27,11 @@ export default function Hero() {
             </span>
             Now accepting early access
           </span>
-          <h1 className="text-4xl md:text-7xl tracking-tight text-white mb-5 max-w-4xl mx-auto leading-[1.15] italic font-play">
+          <h1 className="text-4xl md:text-7xl tracking-tight text-white mb-5 md:max-w-4xl max-w-[290px] mx-auto leading-[1.15] italic font-play">
             Stop Managing Client Feedback in <span className="text-zinc-500 italic">Endless Email Threads</span>
           </h1>
           <p className="text-base md:text-lg text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Milestack helps web design agencies manage client <br className="hidden md:block"/> feedback, approvals, and project milestones in one workspace.
+            Milestack helps web design agencies manage client <br className="hidden md:block" /> feedback, approvals, and project milestones in one workspace.
           </p>
 
           <div className="flex flex-col items-center gap-6">

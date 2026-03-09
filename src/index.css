@@ -6,7 +6,6 @@
 @import "@fontsource/merriweather";
 @import "@fontsource/bricolage-grotesque";
 
-
 @custom-variant dark (&:is(.dark *));
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -75,7 +74,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.87 0.00 0);
+  --primary: oklch(0.87 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -103,9 +102,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist Variable', sans-serif;
-  --font-merri: 'Merriweather';
-  --font-display2: 'Bricolage Grotesque', sans-serif;
+  --font-sans: "Geist Variable", sans-serif;
+  --font-merri: "Merriweather";
+  --font-display2: "Bricolage Grotesque", sans-serif;
   --font-play: "Playfair Display", serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);

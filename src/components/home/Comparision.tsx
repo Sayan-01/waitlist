@@ -57,13 +57,13 @@ const Comparision = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="rounded-2xl overflow-hidden border border-border/60 bg-gradient-to-br from-indigo-500/20 to-transparent"
+        className="rounded-2xl overflow-x-auto border border-border/60 bg-gradient-to-br from-indigo-500/20 to-transparent"
         style={{
           background: "linear-gradient(160deg, hsl(var(--color-indigo-500)) 0%, hsl(var(--color-indigo-500) / 0.8) 100%)",
         }}
       >
         {/* Header */}
-        <div className="grid grid-cols-3 text-sm font-semibold border-b border-border/40">
+        <div className="grid grid-cols-3 text-sm font-semibold border-b border-border/40 min-w-xl">
           <div className="px-4 md:px-6 md:pl-10 py-4 text-muted-foreground border-r border-border/40">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium shadow-[0_0_15px_rgba(99,102,241,0.1)]">
               <span className="relative flex h-2 w-2">
@@ -97,7 +97,7 @@ const Comparision = () => (
         {rows.map((row, i) => (
           <motion.div
             key={i}
-            className={`grid grid-cols-3 text-sm ${i !== rows.length - 1 ? "border-b border-border/60" : ""} hover:bg-primary/[0.03] transition-colors`}
+            className={`grid grid-cols-3 text-sm min-w-xl ${i !== rows.length - 1 ? "border-b border-border/60" : ""} hover:bg-primary/[0.03] transition-colors`}
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

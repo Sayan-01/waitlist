@@ -67,7 +67,7 @@ export default function HowItWorks() {
               transition={{ delay: index * 0.2, duration: 0.6 }}
               className="relative group"
             >
-              <div className="relative bg-zinc-900/40 backdrop-blur-xl border border-white/5 rounded-[2rem] p-6 pb-8 hover:border-white/10 transition-colors h-full flex flex-col items-center text-center">
+              <div className="relative bg-zinc-900/40 backdrop-blur-xl border border-white/5 rounded-[2rem] sm:p-6 p-5 pb-8 hover:border-white/10 transition-colors h-full flex flex-col items-center text-center">
                 {/* Step Number Badge */}
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-zinc-900 border border-white/10 px-4 py-1 rounded-full text-[10px] font-black text-zinc-500 uppercase tracking-tighter">
                   Step 0{index + 1}

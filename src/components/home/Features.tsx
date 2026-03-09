@@ -40,7 +40,7 @@ export default function Features() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="bg-gradient-to-br from-zinc-900 to-zinc-950 p-8 hover:border-emerald-500/30 transition-all duration-500 group">
+              <Card className="bg-gradient-to-br from-zinc-900 to-zinc-950 sm:p-8 p-4 hover:border-emerald-500/30 transition-all duration-500 group">
                 <div className="flex gap-6">
                   <div className="w-22 rounded-2xl bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition-colors">
                     <feature.icon className="w-7 h-7 text-emerald-500" />
