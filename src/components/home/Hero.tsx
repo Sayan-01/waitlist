@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
             Now accepting early access
           </span>
-          <h1 className="text-4xl md:text-7xl tracking-tight text-white mb-5 md:max-w-4xl max-w-[290px] mx-auto leading-[1.15] italic font-play">
+          <h1 className="text-4xl md:text-7xl tracking-tight text-white mb-5 sm:max-w-4xl max-w-[290px] mx-auto leading-[1.15] italic font-play">
             Stop Managing Client Feedback in <span className="text-zinc-500 italic">Endless Email Threads</span>
           </h1>
           <p className="text-base md:text-lg text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
